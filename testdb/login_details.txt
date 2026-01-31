@@ -1,0 +1,13 @@
+use testdb;
+drop table login_details;
+CREATE TABLE `login_details` (
+  `First_Name` varchar(255) DEFAULT NULL,
+  `Last_Name` varchar(255) DEFAULT NULL,
+  `Class_Sec` varchar(255) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  `Password` varchar(255) DEFAULT NULL,
+  `DOC` datetime DEFAULT NULL,
+  `UserID` int unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`UserID`),
+  UNIQUE KEY `idx_login_details_Email` (`Email`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
