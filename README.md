@@ -28,10 +28,3 @@ Once the installation process completes, it is vital to verify that the most sen
 
 
 
-
-
-Streamlined Dependency
-Management
-To avoid the manual labor of entering over 30 separate commands, you should use a requirements.txt file to manage your dependencies. Create a new text file in your project root directory named requirements.txt and paste your entire list of libraries, including the specific versions (e.g., tace-
-recognition==1.3.0, Flask==3.1.2, and flet==0.19.0). This "pinned" versioning strategy is critical for face recognition projects, as small updates in computer vision libraries can often introduce breaking changes to the way face encodings are calculated or how the webcam feed is processed.
-Once the file is saved, you can install everything in one go by running pip install r requirements.txt.
